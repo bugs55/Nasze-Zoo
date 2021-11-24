@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.container{
+    padding: 70px 100px;
+}
+
+header {
+    display: flex;
+    padding: 0px 100px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px 1px rgb(213, 213, 213);
+
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.banner{
+    background: url(/images/zooBanner.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.banner:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.678);
+    width: 100%;
+    height: 100%;
+}
+
+.bannerText{
+    z-index: 1;
+}
+
+.bannerTextTitle{
+    font-size: 60px;
+    color: rgb(240, 240, 240);
+}
+
+.bannerTextButton{
+    margin: 35px 0 0 0;
+    border: none;
+    background: #6F8C30;
+    color: rgb(240, 240, 240);
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.bannerTextButton:hover{
+    background-color: #4F6322;
+}
+
+.bannerTextPar{
+    max-width: 600px;
+    margin-top: 10px;
+    color: rgb(240, 240, 240);
+}
+
+.animalsTitle{
+    font-size: 30px;
+    text-align: center;
+}
+
+.animalsText{
+    margin: 20px auto 50px auto;
+    max-width: 800px;
+}
+
+.animalsImgWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.animalsImg{
+    max-width: calc(50% - 5px);
+}
+
+footer{
+    background: #260B01;
+    color: rgb(240, 240, 240);
+    display: flex;
+    gap: 20px;
+}
